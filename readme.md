@@ -9,6 +9,17 @@ This repository contains the VHDL code for a MIPS processor, including the follo
 - Arithmetic and Logic Unit (ALU)
 - Data memory
 
+this project was done as part of the Digital system design course at the AAST. The project was done in VHDL and was simulated using GHDL.
+
+## Contributors
+
+- Omar Ahmed Elsayed
+- Ammar Abdelhamid Amin
+- Youssef Mohamed Fahmy
+- Ahmed Osama
+- Hassan mikawii
+- Omar Mohamed Anwar
+
 ## How to Use
 
 To use the MIPS processor, you will need a VHDL simulator such as [GHDL](https://ghdl.readthedocs.io/en/latest/). You can then compile and simulate the processor by following these steps:
