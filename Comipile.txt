@@ -1,0 +1,31 @@
+step 1:
+
+ghdl -a --ieee=synopsys -fexplicit *.vhd
+
+
+step 2:
+
+
+
+ghdl -e --ieee=synopsys -fexplicit tb_MIPS_VHDL
+
+
+
+step 3:
+
+ghdl -r --ieee=synopsys -fexplicit tb_MIPS_VHDL --stop-time=1000ns --vcd=sim.vcd
+
+
+
+step 4:
+
+gtkwave sim.vcd
+
+
+
+
+requrements: 
+ghdl: http://ghdl.free.fr/ghdl-installer-0.29.1.exe 
+gtkwave: https://sourceforge.net/projects/gtkwave/files/gtkwave-3.3.100-bin-win64/gtkwave-3.3.100-bin-win64.zip/download
+
+files : ALU.vhd ALUCU.vhd CU.vhd DataMemory.vhd InstructionMem.vhd RegisterFile.vhd MIPS.vhd testbench.vhd
