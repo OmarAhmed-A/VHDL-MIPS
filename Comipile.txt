@@ -1,6 +1,6 @@
 step 1:
 
-ghdl -a --ieee=synopsys -fexplicit *.vhd
+ghdl -a --ieee=synopsys -fexplicit ALU.vhd ALUCU.vhd CU.vhd DataMemory.vhd InstructionMem.vhd RegisterFile.vhd MIPS.vhd testbench.vhd
 
 
 step 2:
