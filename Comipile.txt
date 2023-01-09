@@ -13,7 +13,7 @@ ghdl -e --ieee=synopsys -fexplicit tb_MIPS_VHDL
 
 step 3:
 
-ghdl -r --ieee=synopsys -fexplicit tb_MIPS_VHDL --stop-time=1000ns --vcd=sim.vcd
+ghdl -r --ieee=synopsys -fexplicit tb_MIPS_VHDL --stop-time=350ns --vcd=sim.vcd
 
 
 

@@ -19,7 +19,7 @@ all: $(TARGET)
 $(TARGET): $(SRC)
 	$(GHDL) -a $(GHDLFLAGS) $(SRC)
 	$(GHDL) -e $(GHDLFLAGS) $(TARGET)
-	$(GHDL) -r $(GHDLFLAGS) $(TARGET) --stop-time=1000ns --vcd=sim.vcd
+	$(GHDL) -r $(GHDLFLAGS) $(TARGET) --stop-time=350ns --vcd=sim.vcd
 	gtkwave sim.vcd
 
 clean:
