@@ -39,7 +39,7 @@ signal rom_addr: std_logic_vector(3 downto 0);
   );
 begin
 
- rom_addr <= pc(4 downto 1);
+  rom_addr <= pc(4 downto 1);
   instruction <= rom_data(to_integer(unsigned(rom_addr))) when pc < x"0020" else x"0000";
 
 end Behavioral;

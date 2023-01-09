@@ -14,8 +14,8 @@ end Data_Memory_VHDL;
 
 architecture Behavioral of Data_Memory_VHDL is
 signal ram_addr: std_logic_vector(7 downto 0);
-type data_mem is array (0 to 255 ) of std_logic_vector (15 downto 0);
-signal RAM: data_mem :=((others=> (others=>'0')));
+type data_mem is array (0 to 127 ) of std_logic_vector (15 downto 0);
+signal RAM: data_mem := (others=> (others=>'0'));
 begin
 
  ram_addr <= mem_access_addr(8 downto 1);
