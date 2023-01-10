@@ -39,15 +39,15 @@ The MIPS processor includes the following components:
 
 ### Program Counter (PC)
 
-The PC is responsible for storing the address of the next instruction to be executed. It is updated every clock cycle, either by incrementing its value by 2 (to skip over the fixed-size instruction word) or by jumping to a new address specified by the instruction.
+The PC is responsible for storing the address of the next instruction to be executed. It is updated every clock cycle, either by incrementing its value by 2 (to skip over the fixed-size instruction word) or by jumping to a new address specified by the instruction. Signals are used to control the operation of the PC. (See [pcSignals.md](pcSignals.md) for more information.
 
 ### Instruction Memory
 
-The instruction memory stores the instructions of the program being executed. It has a single input (the PC) and a single output (the instruction).
+The instruction memory stores the [instructions](Rom.md) of the program being executed. It has a single input (the PC) and a single output (the instruction).
 
 ### Control Unit
 
-The control unit decodes the instruction and generates the control signals needed to execute it. The control signals are used to control the operation of the other components of the processor.
+The control unit decodes the instruction and generates the [control signals](CUSignals.md) needed to execute it. The control signals are used to control the operation of the other components of the processor.
 
 ### Register File
 
@@ -63,4 +63,4 @@ This module stores the data for the processor. It has a read port and a write po
 
 ## Main Processor
 
-This module brings together all the above modules to form a complete MIPS processor. It is a single clock-cycle processor, meaning that it executes one instruction per clock cycle.
+This module brings together all the above modules to form a complete MIPS processor. It is a single clock-cycle processor, meaning that it executes one instruction per clock cycle. Some signals in the begining of the file that may not be clear are documented [here](mgicSignalsMips.md).
