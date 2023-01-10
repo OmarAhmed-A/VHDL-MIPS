@@ -76,7 +76,7 @@ BEGIN
   -- sign extend
   tmp1 <= (OTHERS => instr(6));
   sign_ext_im <= tmp1 & instr(6 DOWNTO 0);
-  zero_ext_im <= "000000000" & instr(6 DOWNTO 0);
+  zero_ext_im <= "000000000" & instr(6 DOWNTO 0); -- & is the concatenation operator
   imm_ext <= sign_ext_im WHEN sign_or_zero = '1' ELSE
     zero_ext_im;
 
